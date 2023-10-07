@@ -4,7 +4,13 @@ import ru.otus.spring.domain.Person;
 
 public class PersonDaoSimple implements PersonDao {
 
+    int age;
+
     public Person findByName(String name) {
-        return new Person(name, 18);
+        return new Person(name, age);
+    }
+
+    public void setDefaultAge(int age) {
+        this.age = age;
     }
 }
