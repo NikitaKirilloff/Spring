@@ -23,7 +23,7 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
         }
 
         if (bean.getClass().isAssignableFrom(Phone.class)) {
-            //updateGreeting(bean);
+            updateGreeting(bean);
         }
         return bean;
     }
